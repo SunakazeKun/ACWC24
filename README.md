@@ -27,13 +27,13 @@ Each distributable has a folder inside the *src* directory. They all require a p
     {
 	    "Regions": [ "E", "P", "J", "K" ],
 	    "Unk0": 1,
-		"Unk4": 1,
-		"Unk8": 16,
-		"UnkC": 0,
-		"Unk10": 0,
-		"ItemFile": "<item file name>",
-		"DesignFile": "<pattern file name>",
-		"NpcFile": "<npc file name>"
+	    "Unk4": 1,
+	    "Unk8": 16,
+	    "UnkC": 0,
+	    "Unk10": 0,
+	    "ItemFile": "<item file name>",
+	    "DesignFile": "<pattern file name>",
+	    "NpcFile": "<npc file name>"
 	}
 
 The target region is used to add the required letter text for each localization (if available). If you don't want to create a package for separate regions, simply change the list to contain *All*. The unknown parameters still need to be documented.
@@ -55,11 +55,11 @@ Letters for each language are stored in separate files:
 It's a basic JSON object which looks like this:
 
     {
-		"Paper": "elegant",
-		"Sender": "RiiConnect24",
-		"Header": "Dear \n,",
-		"Body": "Here is a DLC item from\nRiiConnect24. It's an\nRC24 carpet! It'll show\nvisitors that you enjoy\nusing our service!",
-		"Footer": "RiiConnect24"
+	    "Paper": "elegant",
+	    "Sender": "RiiConnect24",
+	    "Header": "Dear \n,",
+	    "Body": "Here is a DLC item from\nRiiConnect24. It's an\nRC24 carpet! It'll show\nvisitors that you enjoy\nusing our service!",
+	    "Footer": "RiiConnect24"
 	}
 
 It's important to note that a line should never contain more than 26 characters or the game will not display the letter at all! Make sure to put line breaks.
